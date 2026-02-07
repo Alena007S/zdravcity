@@ -1,0 +1,17 @@
+---
+- summary: |
+    Проверка успешной регистрации на сайте
+  requirement: |
+    При правильном заполнении полей "Nickname", "Email", "Password", "Password Confirmation" должна произойти регистрации пользователя.
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    empty
+  steps:
+    - Вводим новый Nicname 
+    - Вводим новый Email
+    - Вводим новый Password
+    - Повторяем Password
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен попасть в лобби, в правом верхнем углу пользователь видит свой ник. На почту должно быть отправлено письмо с подтверждением.
